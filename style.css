@@ -1,0 +1,48 @@
+.dot1{
+  width: 10px;
+  height: 10px;
+  background-color: brown;
+  border-radius: 50px;
+}
+.dot2{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(42, 140, 165);
+  border-radius: 50px;
+}
+.dot3{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(165, 116, 42);
+  border-radius: 50px;
+}
+header{
+  display: flex;
+  gap: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: Caacupe One;
+  border-bottom: 2px solid;
+}
+.dots{
+  position: relative;
+  display: flex;
+  gap: 15px;
+  top: 5px;
+}
+@keyframes up {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+.dot1{
+  animation: up 2s infinite alternate;
+}
+.dot2{
+  animation: up 2s  infinite alternate;
+}
+.dot3{
+  animation: up 2s infinite alternate;
+}
