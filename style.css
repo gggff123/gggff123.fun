@@ -68,13 +68,125 @@ header{
   display: flex;
   gap: 15px;
 }
-.gg:hover {
-     animation: alternate infinite rainbow 2s;
+.gg{
+  background: linear-gradient(to right,#D38312,#A83279);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
 }
-@keyframes rainbow {
-  0% {color: black;}
-  20% {color:green;}
-  40% {color:rgb(226, 31, 31);}
-  80% {color:rgb(58, 37, 250);}
-  100% {color:rgb(255, 136, 0);}
+.gg{
+  animation: animate_text 2s infinite;
+}
+@keyframes animate_text{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+.intro,.appear{
+  margin: 0;
+}
+.appear{
+  position: relative;
+  bottom: 12px;
+  padding: 12px;
+  border: 0px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 90px #2c12c0;
+  font-family: alfa slab one;
+}
+.a,.solo,.dev,.from,.india{
+  display: inline-block;
+  margin-right: 5px;
+}
+.animate {
+  animation-name: up_down;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.a.animate,.dev.animate{
+  animation-duration: 2s;
+}
+
+.solo.animate,.from.animate{
+  animation-duration: 1s;
+}
+
+.india.animate{
+  animation-duration: 0.5s;
+}
+
+@keyframes up_down{
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(10px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+.working_with{
+  display: flex;
+  gap: 15px;
+  margin-top: 16px;
+}
+.lang{
+  margin-top: 12px;
+  color: rgba(61, 60, 58, 0.5);
+}
+.who{
+  display: flex;
+  gap: 15px;
+  background: #cec9f77c;
+  height: 90px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 90px #2c12c0;
+  margin-top: 20px;
+}
+.foll{
+  display: flex;
+  gap: 12px;
+  position: relative;
+  top: -20px;
+  background: linear-gradient(to right,#f96e49,
+  #59271a,#140907);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+}
+.avatar{
+  border-radius: 50px;
+  margin-top: 8px;
+  margin-left: 6px;
+  animation: spin 2s infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.working_with {
+    width: 100%;
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    width: max-content;
 }
