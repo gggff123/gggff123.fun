@@ -150,8 +150,8 @@ header{
   gap: 15px;
   background: #cec9f77c;
   height: 90px;
+  width:100px;
   border-radius: 20px;
-  box-shadow: 2px 4px 90px #2c12c0;
   margin-top: 20px;
 }
 .foll{
